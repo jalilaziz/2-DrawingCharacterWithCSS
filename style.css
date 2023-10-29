@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --body-color: rgb(117, 66, 17);
+    --body-color2: rgb(171, 97, 28);
+    --nose-color: orange;
+}
+
+body {
+    margin:auto;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.face {
+    position: absolute;
+    top: 19%;
+    left: 11px;
+    width: 250px;
+    height: 120px;
+    background-color: var(--body-color);
+    border-radius: 60%;
+}
+
+.earleft {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 18%;
+    left: 12%;
+    background-color: var(--body-color);
+    transform: rotate(35deg);
+}
+.earright {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 18%;
+    left: 37%;
+    background-color: var(--body-color);
+    transform: rotate(55deg);
+}
+.eyes {
+    position: absolute;
+    top: 20%;
+    width: 300px;
+    height: 200px;
+}
+
+.eyeleft {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  .eyeleft1 {
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--body-color2);
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid var(--body-color);
+  }
+  .eyeleft2 {
+    position:absolute;
+    top: 75px;
+    left: 75px;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .eyeleft3 {
+    position:absolute;
+    top: 60px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .eyeleft4 {
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+.eyeright {
+    position: absolute;
+    top: 0;
+    left: 118px;
+  }
+  .eyeright1 {
+      position:absolute;
+      width: 150px;
+      height: 150px;
+      background-color: var(--body-color2);
+      border-radius: 50%;
+      z-index: 1;
+      border: 2px solid var(--body-color);
+  }
+  .eyeright2 {
+      position:absolute;
+      top: 75px;
+      left: 75px;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+  }
+  .eyeright3 {
+      position:absolute;
+      top: 60px;
+      left: 60px;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: black;
+      border-radius: 50%;
+  }
+  .eyeright4 {
+      position:absolute;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+  }
+
+.nose {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: 112px;
+    background-color: orange;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.body {
+    position: absolute;
+    top: 30%;
+    left: 22px;
+    width: 230px;
+    height: 250px;
+    background-color: var(--body-color2);
+    border-radius: 45%;
+}
+
+.wingleft {
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    top: 45%;
+    background-color: var(--body-color);
+    border-radius: 70% 0 70% 0;
+    transform: rotate(-15deg);
+}
+.wingright {
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    top: 45%;
+    left: 41%;
+    background-color: var(--body-color);
+    border-radius: 0 70% 0 70%;
+    transform: rotate(15deg);
+}
+
+.leftfoot {
+    position: absolute;
+    margin:0;
+    transform: rotate(10deg);
+    top: 77%;
+    left: 20%;
+}
+  .lpart1 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 0;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .lpart2 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 7px;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .lpart3 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 14px;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+
+.rightfoot {
+    position: absolute;
+    margin:0;
+    transform: rotate(-10deg);
+    top: 77.5%;
+    left: 32%;
+}
+  .rpart1 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 0;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .rpart2 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 7px;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .rpart3 {
+    position: absolute;
+    width: 7px;
+    height: 22px;
+    left: 14px;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
